@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My test page</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <div class="left-area">
+        <img class="fern" src="./img/ferns.jpg">
+        <div class="overlay"></div>
+        <div class="odin-area">
+          <img class="odin" src="./img/odin.png">
+          <span class="title">ODIN</span>
+        </div>
+      </div>
+      <div class="right-area">
+        <div class="description">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.  Sign up <span class="italic">now</span> to get started.</p>
+          <br>
+          <p>You <span class="italic">know</span> you want to.</p>    
+        </div>
+        <div class="form-section">
+          <span class="lets">Let's do this!</span>
+            <form action="/my-handling-form-page" method="post">
+              <div class="form-column">
+                <label for="firstname">First Name *
+                <input type="text" id="firstname" name="firstname" required></label>
+                <label for="mail">Email *
+                <input type="email" id="email" name="email" required></label>
+                <label for="password" onchange=checkInput() oninput=checkInput>Password *
+                <input type="password" id="password" name="password" required ></label>
+                <span class="error" aria-live="polite"></span>
+              </div>
+              <div class="form-column">
+                <label for="lastname">Last Name *
+                <input type="text" id="lastname" name="lastname" required></label>
+                <label for="phonenumber">Phone Number
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="(e.g. 123456789)"></label>
+                <label for="confirm">Confirm Password *
+                <input type="password" id="confirm" name="confirm" placeholder="" required minlength="6"></label>
+                <span id="confirm-span" class="error" aria-live="polite"></span>
+              </div>
+            </form>
+        </div>
+        <div class="btn-area">
+          <div>
+            <button>Create Account</button>
+          </div>
+          <div>
+            Already have an account? <b><a href="">Log in</a></b>
+          </div>
+      </div>
+  </body>
+  <script src="./scripts.js"></script>  
+</html>
